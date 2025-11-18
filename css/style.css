@@ -43,15 +43,14 @@ header {
     padding: 0 5px;
 }
 
-
-
-
-
-/* debug */
+h2 {
+    padding: 5px 0;
+}
 
 .container-brani {
     display: flex;
     justify-content: space-between;
+    padding: 20px 0;
 }
 
 .brani {
@@ -62,6 +61,14 @@ header {
 
 img {
     width: 150px;
+}
+
+
+
+/* debug */
+
+.wrapper {
+    max-width: 320px;
 }
 
 .sidebar {
