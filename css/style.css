@@ -19,27 +19,40 @@
     width: 100%;
 }
 
+.white {
+    color: white;
+}
 .sidebar {
     display: flex;
     flex-direction: column;
     background-color: black;
     width: 200px;
-    color: lightgrey;
 }
+
 header {
-    background-color: green;
+    background-color: #0C0D0F;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 80px;
 }
+
+.button {
+    padding: 10px;
+    border-radius: 200px;
+    border: 2px solid white;
+}
+
 .container-desta {
-    background-color: darkblue;
     flex-grow: 1;
 }
 
 .overflow {
-    background-color: aqua;
+    background-color: #161928;
 }
 
 footer {
-    background-color: grey;
+    background-color: #2A2630;
     height: 100px;
     position: fixed;
 }
