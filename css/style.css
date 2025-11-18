@@ -15,23 +15,31 @@
 
 /* debug */
 .container {
-    background-color: antiquewhite;
     display: flex;
     width: 100%;
 }
 
 .sidebar {
+    display: flex;
+    flex-direction: column;
     background-color: black;
     width: 200px;
+    color: lightgrey;
 }
-
-.overflow {
+header {
+    background-color: green;
+}
+.container-desta {
     background-color: darkblue;
     flex-grow: 1;
 }
 
+.overflow {
+    background-color: aqua;
+}
+
 footer {
     background-color: grey;
-height: 100px;
-
+    height: 100px;
+    position: fixed;
 }
