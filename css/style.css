@@ -80,8 +80,8 @@ li {
 
 .container-desta {
     flex-grow: 1;
-    height: calc(150vh - 100px);
-    overflow: auto;
+    /* height: calc(150vh - 100px); */
+    overflow: auto; 
 }
 
 header {
@@ -145,16 +145,17 @@ h4 {
 
 
 
+.container {
+    height: calc(100vh - 100px);
+}
 
+.sidebar {
+    max-height: 100%;
+}
 
-
-
-
-
-
-
-
-
+.container-desta {
+    max-height: 100%;
+}
 
 
 
