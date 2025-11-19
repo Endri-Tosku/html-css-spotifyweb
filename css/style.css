@@ -23,7 +23,9 @@ body {
 }
 
 
-/* sidebara */
+
+
+/* sidebar */
 
 
 .sidebar {
@@ -86,6 +88,16 @@ li {
     max-height: 100%;
 }
 
+.overflow {
+    background-color: #161928;
+    padding: 0 20px;
+}
+
+.sub-container {
+    max-width: 320px;
+}
+
+
 header {
     background-color: #0C0D0F;
     display: flex;
@@ -119,13 +131,14 @@ h2 {
     display: flex;
     gap: 10px;
     padding: 20px 0;
+    flex-wrap: wrap;
 }
 
 .brani {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: calc(100% / 6 - 50px / 5);
+    width: 150px;
 }
 
 .q {
@@ -194,15 +207,35 @@ footer {
 
 
 
+
+
+
+.ul {
+    margin-top: 15px;
+    height: 250px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.brani {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+}
+
+
 /* debug */
 
+/* .container-brani {
+    display: flex;
+    gap: 10px;
+    padding: 20px 0;
+} */
 
-.sub-container {
-    max-width: 320px;
-}
-
-
-.overflow {
-    background-color: #161928;
-    padding: 0 20px;
-}
+/* .brani {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100% / 6 - 50px / 5);
+} */
