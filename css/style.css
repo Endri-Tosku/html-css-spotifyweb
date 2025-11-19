@@ -156,6 +156,7 @@ footer {
 .container-canzone {
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 
 .img-sinister-footer {
@@ -171,7 +172,20 @@ footer {
     display: flex;
 }
 
+.play-buttons {
+    gap: 20px;
+    display: flex;
+    align-items: center;
+}
 
+.fa-circle-play {
+    font-size: xx-large;
+}
+
+.timeline {
+    display: flex;
+    justify-content: space-between;
+}
 
 
 
