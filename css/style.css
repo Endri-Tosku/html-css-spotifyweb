@@ -157,6 +157,10 @@ h4 {
     padding: 10px 0;
 }
 
+
+/* footer */
+
+
 footer {
     background-color: #2A2630;
     height: 100px;
@@ -185,10 +189,17 @@ footer {
     display: flex;
 }
 
+.container-play {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .play-buttons {
     gap: 20px;
     display: flex;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .fa-circle-play {
@@ -197,15 +208,36 @@ footer {
 
 .timeline {
     display: flex;
-    justify-content: space-between;
+    gap: 20px;
 }
 
+.background-linea {
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    border-radius: 100px;
+    width: 300px;
+}
 
+.linea {
+    height: 10px;
+    width: 100px;
+    background: lightgray;
+    border-radius: 100px;
+}
 
+.container-destra {
+    display: flex;
+    gap: 10px;
+}
 
+.destra1 {
+    width: 50px;
+}
 
-
-
+.destra2 {
+    width: 15px;
+}
 
 
 
