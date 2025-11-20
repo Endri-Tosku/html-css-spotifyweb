@@ -14,7 +14,10 @@ body {
 
 .grey {
     color: gray;
-    font-size: small;
+}
+
+.grey:hover {
+    color: white;
 }
 
 .container {
@@ -22,7 +25,9 @@ body {
     height: calc(100vh - 100px);
 }
 
-
+.pointer {
+    cursor: pointer;
+}
 
 
 /* sidebar */
@@ -35,14 +40,17 @@ body {
     justify-content: space-between;
     font-size: small;
     padding: 10px;
-    flex-basis: 250px;
+    width: 250px;
     flex-shrink: 0;
-    max-height: 100%;
+    overflow: hidden;
+    height: calc(100vh - 100px);
 }
 
 .wrapper {
     display: flex;
     flex-direction: column;
+    overflow: hidden;
+    flex: 1;
 }
 
 .logo {
@@ -59,6 +67,16 @@ body {
 
 .svg {
     width: 25px;
+}
+
+.container-lista {
+    overflow: hidden;
+    flex: 1;
+}
+
+.ul {
+    margin-top: 15px;
+    overflow-y: auto;
 }
 
 li {
@@ -86,11 +104,13 @@ li {
     flex-grow: 1;
     overflow: auto;
     max-height: 100%;
+    font-size: small;
 }
 
 .overflow {
     background-color: #161928;
     padding: 0 20px;
+    color: gray;
 }
 
 .sub-container {
@@ -114,6 +134,10 @@ header {
     border: 2px solid white;
 }
 
+.button:hover {
+    padding: 15px;
+}
+
 .nav-bar {
     text-align: center;
     padding: 20px 0;
@@ -125,29 +149,37 @@ header {
 
 h2 {
     padding: 5px 0;
+    color: white;
 }
 
 .container-brani {
     display: flex;
     gap: 10px;
     padding: 20px 0;
-    flex-wrap: wrap;
 }
 
 .brani {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 150px;
+    width: calc(100% / 6 - 50px / 6);
 }
 
-.q {
+.filter:hover {
+    filter: opacity(0.5);
+}
+
+.brani-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: calc(100% / 2 - 20px / 2);
 }
 
 img {
-    width: 150px;
+    width: 100%;
 }
+
 
 .autori {
     border-radius: 1000px;
@@ -155,6 +187,7 @@ img {
 
 h4 {
     padding: 10px 0;
+    color: white;
 }
 
 
@@ -206,6 +239,10 @@ footer {
     font-size: xx-large;
 }
 
+.fa-circle-play:hover {
+    font-size: 35px;
+}
+
 .timeline {
     display: flex;
     gap: 20px;
@@ -226,6 +263,10 @@ footer {
     border-radius: 100px;
 }
 
+.linea:hover {
+    background: lightgreen;
+}
+
 .container-destra {
     display: flex;
     gap: 10px;
@@ -240,34 +281,15 @@ footer {
 }
 
 
-
-
-.ul {
-    margin-top: 15px;
-    height: 250px;
-    overflow: hidden;
-    overflow-y: auto;
-}
-
-.brani {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 150px;
-}
-
-
 /* debug */
 
-/* .container-brani {
-    display: flex;
-    gap: 10px;
-    padding: 20px 0;
-} */
 
-/* .brani {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: calc(100% / 6 - 50px / 5);
-} */
+
+@media screen and (max-width: 992px) {
+    .brani {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: calc(100% / 6 - 50px / 6);
+    }
+}
