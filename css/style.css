@@ -177,9 +177,28 @@ h2 {
     width: calc(100% / 6 - 50px / 6);
 }
 
-.filter:hover {
-    filter: opacity(0.5);
+.filter-immagini {
+    position: relative;
 }
+
+.filter-immagini:hover {
+    filter: brightness(40%);
+}
+
+.filter-immagini:hover .circle-hover {
+    opacity: 1;
+}
+
+.circle-hover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    opacity: 0;
+    color: white;
+    font-size: xx-large;
+}
+
 
 .brani-2 {
     display: flex;
@@ -210,16 +229,17 @@ footer {
     background-color: #2A2630;
     height: 100px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 10px;
-    gap: 20px;
+    gap: 10px;
 }
+
 
 .container-canzone {
     display: flex;
     align-items: center;
     gap: 10px;
+    width: 25%;
 }
 
 .img-sinister-footer {
@@ -236,6 +256,7 @@ footer {
     flex-direction: column;
     align-items: center;
     flex: 1;
+    width: 50%;
 }
 
 .play-buttons {
@@ -245,11 +266,11 @@ footer {
     margin-bottom: 20px;
 }
 
-.fa-circle-play {
+.circle {
     font-size: xx-large;
 }
 
-.fa-circle-play:hover {
+.circle:hover {
     font-size: 35px;
 }
 
@@ -296,40 +317,29 @@ footer {
 
 
 
-
-
 /* madia screen */
 
 @media (max-width: 992px) {
+
     .container-brani {
         flex-wrap: wrap;
     }
 
     .brani {
-        width: calc(100% / 4 - 20px);
+        width: calc(100% / 4 - 8px);
     }
 
 }
 
 @media (max-width: 768px) {
-    .container-brani {
-        flex-wrap: wrap;
-    }
 
     .brani {
-        width: calc(100% / 2 - 20px);
+        width: calc(100% / 2 - 5px);
     }
 
 }
 
 @media (max-width: 576px) {
-    .container-brani {
-        flex-wrap: wrap;
-    }
-
-    .brani {
-        width: calc(100% / 2 - 20px);
-    }
 
     .img-sinister-footer {
         display: none;
@@ -338,23 +348,12 @@ footer {
 }
 
 @media (max-width: 500px) {
-    .container-brani {
-        flex-wrap: wrap;
-    }
-
-    .brani {
-        width: calc(100% / 2 - 20px);
-    }
 
     .sidebar {
         width: 50px;
     }
 
     .none {
-        display: none;
-    }
-
-    .img-sinister-footer {
         display: none;
     }
 
