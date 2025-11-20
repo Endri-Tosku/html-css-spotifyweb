@@ -19,22 +19,23 @@
         <!-- contenuto sidebar -->
         <div class="sidebar">
             <div class="wrapper">
-                <img class="logo pointer" src="./img/logo.svg" alt="">
+                <img class="logo pointer none" src="./img/logo.svg" alt="">
+                <img class="logo pointer small" src="./img/logo-small.svg" alt="">
                 <div class="container-svg pointer">
                     <img class="svg" src="./img/home.svg" alt="">
-                    <a>Home</a>
+                    <a class="none">Home</a>
                 </div>
                 <div class="container-svg pointer">
                     <img class="svg" src="./img/search.svg" alt="">
-                    <a class="grey">Cerca</a>
+                    <a class="grey none">Cerca</a>
                 </div>
                 <div class="container-svg pointer">
                     <img class="svg" src="./img/libreria.svg" alt="">
-                    <a class="grey">La tua libreria</a>
+                    <a class="grey none">La tua libreria</a>
                 </div>
-                <h4>PLAYLIST</h4>
+                <h4 class="none">PLAYLIST</h4>
                 <!-- lista sidebar con overflow -->
-                <div class="container-lista">
+                <div class="container-lista none">
                     <a class="grey align pointer"><i class="fa-solid fa-plus"></i>Crea Playlist</a>
                     <ul class="ul">
                         <li class="pointer grey"><a>Nome Playlist</a></li>
@@ -50,12 +51,12 @@
             <div>
                 <div class="container-svg pointer">
                     <img class="svg" src="./img/download.svg" alt="">
-                    <a class="grey">Installa app</a>
+                    <a class="grey none">Installa app</a>
                 </div>
                 <hr>
                 <div class="container-svg pointer">
                     <img class="svg" src="./img/profile.svg" height="100" width="100" alt="">
-                    <a><b>John Doe</b></a>
+                    <a class="none"><b>John Doe</b></a>
                 </div>
             </div>
         </div>
@@ -68,14 +69,14 @@
 
             <!-- contenuto destra in overflow -->
             <div class="overflow">
-                    <nav class="nav-bar">
-                        <a class="nav-text grey pointer">IN EVIDENZA</a>
-                        <a class="nav-text grey pointer">PODCAST</a>
-                        <a class="nav-text grey pointer">CLASSIFICHE</a>
-                        <a class="nav-text grey pointer">GENERI E MOOD</a>
-                        <a class="nav-text grey pointer">NUOVE USCITE</a>
-                        <a class="nav-text grey pointer">SCOPRI</a>
-                    </nav>
+                <nav class="nav-bar">
+                    <a class="nav-text grey pointer">IN EVIDENZA</a>
+                    <a class="nav-text grey pointer">PODCAST</a>
+                    <a class="nav-text grey pointer">CLASSIFICHE</a>
+                    <a class="nav-text grey pointer">GENERI E MOOD</a>
+                    <a class="nav-text grey pointer">NUOVE USCITE</a>
+                    <a class="nav-text grey pointer">SCOPRI</a>
+                </nav>
 
                 <div class="wrapper-img-destra">
                     <h2>Recentli played</h2>
@@ -148,9 +149,11 @@
     <footer>
 
         <div class="container-canzone">
-            <img class="img-sinister-footer pointer" src="./img/sinister.jpeg" alt="">
-            <a class="nome-sinister-footer"><b class="top">Sinister</b>Brano Nome</a>
             <div>
+                <img class="img-sinister-footer pointer" src="./img/sinister.jpeg" alt="">
+            </div>
+            <a class="nome-sinister-footer"><b class="top">Sinister</b>Brano Nome</a>
+            <div class="heart-folder">
                 <span><i class="fa-regular fa-heart pointer grey"></i></span>
                 <span><i class="fa-regular fa-folder pointer grey"></i></span>
             </div>
