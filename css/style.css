@@ -347,7 +347,7 @@ footer {
 
 }
 
-@media (max-width: 500px) {
+@media (max-width: 468px) {
 
     .sidebar {
         width: 50px;
@@ -359,6 +359,14 @@ footer {
 
     .small {
         display: block;
+    }
+
+    footer {
+        font-size: small;
+    }
+
+    .play-buttons {
+        gap: 10px;
     }
 
 }
